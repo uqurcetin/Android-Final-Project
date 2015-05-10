@@ -1,0 +1,509 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/left_drawer"
+    android:layout_width="240dp"
+    android:layout_height="match_parent"
+    android:layout_gravity="start"
+    android:background="@color/sliding_menu_bg"
+    android:fillViewport="true" >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/footer"
+        android:fillViewport="true"
+        android:scrollbars="none" >
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical" >
+
+                <RelativeLayout
+                    android:id="@+id/rlProfile"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/list_selector"
+                    android:orientation="vertical"
+                    android:padding="8dp" >
+
+                    <ImageView
+                        android:id="@+id/avatar"
+                        android:layout_width="42dp"
+                        android:layout_height="43dp"
+                        android:src="@drawable/def_profile_pic" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="42dp"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="15dp"
+                        android:layout_toRightOf="@+id/avatar"
+                        android:orientation="vertical" >
+
+                        <TextView
+                            android:id="@+id/title"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:ellipsize="end"
+                            android:shadowColor="@color/grey"
+                            android:shadowDx="0"
+                            android:shadowDy="-1"
+                            android:shadowRadius="0.5"
+                            android:singleLine="true"
+                            android:text="KULLANICI"
+                            android:textColor="@color/white"
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/desc"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="bottom"
+                            android:layout_marginTop="4dp"
+                            android:ellipsize="end"
+                            android:shadowColor="@color/grey"
+                            android:shadowDx="0"
+                            android:shadowDy="-1"
+                            android:shadowRadius="0.5"
+                            android:singleLine="true"
+                            android:text="ueasdr@asasd.com"
+                            android:textColor="@color/white"
+                            android:textSize="12sp" />
+                    </LinearLayout>
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="wrap_content"
+                    android:layout_height="2dp"
+                    android:background="#848484" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" >
+
+                    <RelativeLayout
+                        android:id="@+id/rlHome"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/list_selector"
+                        android:clickable="true"
+                        android:padding="4dp" >
+
+                        <ImageView
+                            android:id="@+id/imgHome"
+                            android:layout_width="32dp"
+                            android:layout_height="32dp"
+                            android:layout_centerVertical="true"
+                            android:padding="8dp"
+                            android:src="@drawable/home" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="4dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_toRightOf="@+id/imgHome"
+                            android:ellipsize="end"
+                            android:shadowColor="@color/grey"
+                            android:shadowDx="0"
+                            android:shadowDy="-1"
+                            android:shadowRadius="0.5"
+                            android:singleLine="true"
+                            android:text="Ana Sayfa"
+                            android:textColor="@color/white"
+                            android:textSize="16sp" />
+                    </RelativeLayout>
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginBottom="4dp"
+                        android:layout_marginTop="4dp"
+                        android:background="#848484" />
+
+                    <RelativeLayout
+                        android:id="@+id/rlUploads"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/list_selector"
+                        android:clickable="true"
+                        android:padding="4dp" >
+
+                        <ImageView
+                            android:id="@+id/imgUploads"
+                            android:layout_width="32dp"
+                            android:layout_height="32dp"
+                            android:layout_centerVertical="true"
+                            android:padding="8dp"
+                            android:src="@drawable/uploads" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="4dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_toRightOf="@+id/imgUploads"
+                            android:ellipsize="end"
+                            android:shadowColor="@color/grey"
+                            android:shadowDx="0"
+                            android:shadowDy="-1"
+                            android:shadowRadius="0.5"
+                            android:singleLine="true"
+                            android:text="Dosyalar"
+                            android:textColor="@color/white"
+                            android:textSize="16sp" />
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <View
+                    android:layout_width="wrap_content"
+                    android:layout_height="1dp"
+                    android:background="#848484" />
+
+                <RelativeLayout
+                    android:id="@+id/rlSubscriptions"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/list_selector"
+                    android:clickable="true"
+                    android:paddingBottom="6dp"
+                    android:paddingLeft="12dp"
+                    android:paddingRight="6dp"
+                    android:paddingTop="6dp" >
+
+                    <ImageView
+                        android:id="@+id/imgSubscriptions"
+                        android:layout_width="32dp"
+                        android:layout_height="32dp"
+                        android:layout_centerVertical="true"
+                        android:padding="8dp"
+                        android:src="@drawable/subscriptions" />
+
+                    <TextView
+                        android:id="@+id/labelTaf"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="4dp"
+                        android:layout_toRightOf="@+id/imgSubscriptions"
+                        android:ellipsize="end"
+                        android:shadowDx="0"
+                        android:shadowDy="-1"
+                        android:shadowRadius="0.5"
+                        android:singleLine="true"
+                        android:text="Teslim Edilecekler"
+                        android:textColor="@color/white"
+                        android:textSize="16sp" />
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="wrap_content"
+                    android:layout_height="1dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:background="#848484" />
+
+                <RelativeLayout
+                    android:id="@+id/rlPlaylists"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/list_selector"
+                    android:clickable="true"
+                    android:paddingBottom="6dp"
+                    android:paddingLeft="12dp"
+                    android:paddingRight="6dp"
+                    android:paddingTop="6dp" >
+
+                    <ImageView
+                        android:id="@+id/imgPlaylists"
+                        android:layout_width="32dp"
+                        android:layout_height="32dp"
+                        android:layout_centerVertical="true"
+                        android:padding="8dp"
+                        android:src="@drawable/playlist" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="4dp"
+                        android:layout_toRightOf="@+id/imgPlaylists"
+                        android:ellipsize="end"
+                        android:shadowDx="0"
+                        android:shadowDy="-1"
+                        android:shadowRadius="0.5"
+                        android:singleLine="true"
+                        android:text="Tesim Edilenler"
+                        android:textColor="@color/white"
+                        android:textSize="16sp" />
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="wrap_content"
+                    android:layout_height="1dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:background="#848484" />
+
+                <RelativeLayout
+                    android:id="@+id/rlHistory"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/list_selector"
+                    android:clickable="true"
+                    android:paddingBottom="6dp"
+                    android:paddingLeft="12dp"
+                    android:paddingRight="6dp"
+                    android:paddingTop="6dp" >
+
+                    <ImageView
+                        android:id="@+id/imgHistory"
+                        android:layout_width="32dp"
+                        android:layout_height="32dp"
+                        android:layout_centerVertical="true"
+                        android:padding="8dp"
+                        android:src="@drawable/history" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="4dp"
+                        android:layout_toRightOf="@+id/imgHistory"
+                        android:ellipsize="end"
+                        android:shadowDx="0"
+                        android:shadowDy="-1"
+                        android:shadowRadius="0.5"
+                        android:singleLine="true"
+                        android:text="Teslim Edilemeyenler"
+                        android:textColor="@color/white"
+                        android:textSize="16sp" />
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="wrap_content"
+                    android:layout_height="1dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:background="#848484" />
+
+                <RelativeLayout
+                    android:id="@+id/rlSynch"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/list_selector"
+                    android:clickable="true"
+                    android:paddingBottom="6dp"
+                    android:paddingLeft="12dp"
+                    android:paddingRight="6dp"
+                    android:paddingTop="6dp" >
+
+                    <ImageView
+                        android:id="@+id/imgSynch"
+                        android:layout_width="32dp"
+                        android:layout_height="32dp"
+                        android:layout_centerVertical="true"
+                        android:padding="8dp"
+                         />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="4dp"
+                        android:layout_toRightOf="@+id/imgSynch"
+                        android:ellipsize="end"
+                        android:shadowDx="0"
+                        android:shadowDy="-1"
+                        android:shadowRadius="0.5"
+                        android:singleLine="true"
+                        android:text="Synch >>"
+                        android:textColor="@color/white"
+                        android:textSize="16sp" />
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="wrap_content"
+                    android:layout_height="1dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:background="#848484" />
+                <RelativeLayout
+                    android:id="@+id/rlNote"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/list_selector"
+                    android:clickable="true"
+                    android:paddingBottom="6dp"
+                    android:paddingLeft="12dp"
+                    android:paddingRight="6dp"
+                    android:paddingTop="6dp" >
+
+                    <ImageView
+                        android:id="@+id/imgNote"
+                        android:layout_width="32dp"
+                        android:layout_height="32dp"
+                        android:layout_centerVertical="true"
+                        android:padding="8dp"
+                        android:src="@drawable/note" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="4dp"
+                        android:layout_toRightOf="@+id/imgNote"
+                        android:ellipsize="end"
+                        android:shadowDx="0"
+                        android:shadowDy="-1"
+                        android:shadowRadius="0.5"
+                        android:singleLine="true"
+                        android:text="Notlarım"
+                        android:textColor="@color/white"
+                        android:textSize="16sp" />
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="wrap_content"
+                    android:layout_height="1dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:background="#848484" />
+                <RelativeLayout
+                    android:id="@+id/rlReminder"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/list_selector"
+                    android:clickable="true"
+                    android:paddingBottom="6dp"
+                    android:paddingLeft="12dp"
+                    android:paddingRight="6dp"
+                    android:paddingTop="6dp" >
+
+                    <ImageView
+                        android:id="@+id/imgReminder"
+                        android:layout_width="32dp"
+                        android:layout_height="32dp"
+                        android:layout_centerVertical="true"
+                        android:padding="8dp"
+                        android:src="@drawable/events" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="4dp"
+                        android:layout_toRightOf="@+id/imgReminder"
+                        android:ellipsize="end"
+                        android:shadowDx="0"
+                        android:shadowDy="-1"
+                        android:shadowRadius="0.5"
+                        android:singleLine="true"
+                        android:text="Hatırlatma"
+                        android:textColor="@color/white"
+                        android:textSize="16sp" />
+                </RelativeLayout>
+
+
+
+
+                <View
+                    android:layout_width="wrap_content"
+                    android:layout_height="1dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:background="#848484" />
+                <RelativeLayout
+                    android:id="@+id/rlExit"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/list_selector"
+                    android:clickable="true"
+                    android:paddingBottom="6dp"
+                    android:paddingLeft="12dp"
+                    android:paddingRight="6dp"
+                    android:paddingTop="6dp" >
+
+                    <ImageView
+                        android:id="@+id/imgExit"
+                        android:layout_width="32dp"
+                        android:layout_height="32dp"
+                        android:layout_centerVertical="true"
+                        android:padding="8dp"
+                        android:src="@drawable/close" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="4dp"
+                        android:layout_toRightOf="@+id/imgExit"
+                        android:ellipsize="end"
+                        android:shadowDx="0"
+                        android:shadowDy="-1"
+                        android:shadowRadius="0.5"
+                        android:singleLine="true"
+                        android:text="Çıkış"
+                        android:textColor="@color/white"
+                        android:textSize="16sp" />
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="wrap_content"
+                    android:layout_height="1dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:background="#848484" />
+            </LinearLayout>
+        </RelativeLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/footer"
+        android:layout_width="match_parent"
+        android:layout_height="42dp"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:id="@+id/ivMenuFacebook"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:background="@drawable/fb_selector"
+            android:padding="7dp"
+            android:src="@drawable/menu_fb_icon" />
+
+        <ImageView
+            android:id="@+id/ivMenuTwitter"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:background="@drawable/twt_selector"
+            android:padding="7dp"
+            android:src="@drawable/menu_twt_icon" />
+
+        <ImageView
+            android:id="@+id/ivMenuShare"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:background="@drawable/share_selector"
+            android:padding="7dp"
+            android:src="@drawable/menu_share_icon" />
+    </LinearLayout>
+
+</RelativeLayout>

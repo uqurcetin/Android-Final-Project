@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="white">#FFF</color>
+    <color name="black">#000</color>
+    <color name="grey">#6E6E6E</color>
+    <color name="transparent">#00000000</color>
+    <color name="sliding_menu_bg">#BF666666</color>
+    <color name="facebook">#3b5999</color>
+    <color name="twitter">#01bbf6</color>
+    <color name="share">#5b9139</color>
+    <color name="list_selector">#BF424242</color>
+    <color name="facebook_pressed">#4a6eba</color>
+    <color name="twitter_pressed">#66ccff</color>
+    <color name="share_pressed">#6cac44</color>
+    <color name="purple_light">#a276eb</color>
+    <color name="purple_middle">#8658ce</color>
+    <color name="purple_dark">#6a3ab2</color>
+</resources>

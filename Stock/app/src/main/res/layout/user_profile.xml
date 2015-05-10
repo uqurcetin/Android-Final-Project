@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent" >
+
+    <RelativeLayout
+        android:id="@+id/ivCover"
+        android:layout_width="fill_parent"
+        android:layout_height="180dp"
+        android:background="@drawable/profile_bg" >
+
+        <ImageView
+            android:id="@+id/ivImage"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="45dp"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/circle_profile"
+            android:scaleType="centerCrop" />
+
+        <TextView
+            android:id="@+id/userStatus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="15dp"
+            android:layout_marginTop="4dp"
+            android:singleLine="true"
+            android:text="User name"
+            android:textColor="@color/white"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_marginTop="180dp"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp">
+        <Switch
+            android:layout_marginTop="6dp"
+            android:layout_marginLeft="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/stCalismaDurumu" />
+            <TextView
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="120dp"
+                android:id="@+id/txtCalismaDurum"
+                android:text="Çalışma Durumu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_marginTop="220dp"
+        android:layout_width="fill_parent"
+        android:layout_height="70dp" >
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:background="#EEE9E9" >
+        </View>
+        <TextView
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Telefon : "
+            android:textAppearance="@style/Base.TextAppearance.AppCompat"
+            android:id="@+id/lblTel" />
+        <TextView
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="40dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Telefon : "
+            android:textAppearance="@style/Base.TextAppearance.AppCompat"
+            android:id="@+id/txtTel" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_marginTop="290dp"
+        android:layout_width="fill_parent"
+        android:layout_height="70dp" >
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:background="#EEE9E9" >
+        </View>
+        <TextView
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="E-mail : "
+            android:textAppearance="@style/Base.TextAppearance.AppCompat"
+            android:id="@+id/lblMail" />
+        <TextView
+            android:layout_marginLeft="150dp"
+            android:layout_marginTop="40dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="E-mail : "
+            android:textAppearance="@style/Base.TextAppearance.AppCompat"
+            android:id="@+id/txtMail" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_marginTop="360dp"
+        android:layout_width="fill_parent"
+        android:layout_height="70dp" >
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:background="#EEE9E9" >
+        </View>
+        <TextView
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Kullanıcı Adı : "
+            android:textAppearance="@style/Base.TextAppearance.AppCompat"
+            android:id="@+id/lblusername" />
+        <TextView
+            android:layout_marginLeft="150dp"
+            android:layout_marginTop="40dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Kullanıcı Adı : "
+            android:textAppearance="@style/Base.TextAppearance.AppCompat"
+            android:id="@+id/txtusername" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_marginTop="430dp"
+        android:layout_width="fill_parent"
+        android:layout_height="70dp" >
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:background="#EEE9E9" >
+        </View>
+        <TextView
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Parola : "
+            android:textAppearance="@style/Base.TextAppearance.AppCompat"
+            android:id="@+id/lblPassword" />
+        <TextView
+            android:layout_marginLeft="150dp"
+            android:layout_marginTop="40dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Parola : "
+            android:textAppearance="@style/Base.TextAppearance.AppCompat"
+            android:id="@+id/txtPassword" />
+
+    </RelativeLayout>
+
+</RelativeLayout>
