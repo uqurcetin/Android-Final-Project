@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/get_location"
+        android:orderInCategory="100"
+        app:showAsAction="always"
+        android:icon="@drawable/getlocation"
+        android:title="Get Location"/>
+
+    <item
+        android:id="@+id/dis_connect"
+        android:orderInCategory="100"
+        app:showAsAction="always"
+        android:icon="@drawable/disconnect"
+        android:title="Get Location"/>
+    <item
+        android:id="@+id/_connect"
+        android:orderInCategory="100"
+        app:showAsAction="always"
+        android:icon="@drawable/connect"
+        android:title="Get Location"/>
+
+</menu>

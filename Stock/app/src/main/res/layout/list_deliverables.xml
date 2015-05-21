@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingLeft="15dp"
+    android:paddingRight="15dp"
+    android:descendantFocusability="beforeDescendants">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="15dp"
+        android:paddingTop="15dp"
+        android:paddingBottom="15dp"
+        android:paddingRight="15dp"
+        android:background="@drawable/selector_card_background"
+        android:descendantFocusability="afterDescendants">
+        <TextView
+            android:id="@+id/txtUrun"
+            android:text="Urun"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#ff6c522e"
+            android:gravity="fill|left|top"
+            android:textAppearance="@style/TextAppearance.AppCompat.Title" />
+        <TextView
+            android:id="@+id/txtMusteri"
+            android:text="Müşteri"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#ff43627a"
+            android:gravity="fill|left"
+            android:textSize="16dp" />
+
+
+        <RelativeLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_marginLeft="5dp"
+                android:id="@+id/txtOdeme"
+                android:text="Ödeme"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#d75a6670"
+                android:gravity="left|top" />
+
+            <ImageView
+                android:layout_alignParentRight="true"
+                android:layout_width="wrap_content"
+                android:src="@drawable/next_forlist"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+        <TextView
+           android:id="@+id/txtSiparisDurum"
+           android:layout_width="wrap_content"
+           android:text="Sipariş Durum"
+           android:layout_height="wrap_content"
+            android:textColor="#d75a6670"
+            android:gravity="left|top" />
+        <TextView
+            android:text="Teslim Tarihi"
+            android:id="@+id/txtTeslimTarihi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#d75a6670"
+            android:gravity="left|top" />
+        <TextView
+            android:text="Sevkiyat Adres"
+            android:id="@+id/txtSevkiyatAdresi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#d75a6670"
+            android:gravity="left|top" />
+        <TextView
+            android:visibility="visible"
+            android:id="@+id/txtid"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+</FrameLayout>

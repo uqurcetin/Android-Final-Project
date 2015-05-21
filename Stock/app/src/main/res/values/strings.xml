@@ -8,8 +8,33 @@
     <string name="HintPassword">Parola</string>
     <string name="LoginButtonText">Giriş Yap</string>
     <string name="NewUserButtonText">Kayıt Ol</string>
-    <string name="ExitText">Çıkış</string>
+    <string name="exit_text">Çıkış</string>
     <string name="drawer_open">Slider Menu Opened</string>
     <string name="drawer_close">Slider Menu Closed</string>
+    <string name="title_menu_close">Kapat</string>
+    <string name="title_sync">Sync.</string>
+    <string name="title_settings">Ayarlar</string>
+    <string name="title_profil">Profil</string>
+    <string name="title_forward">Dağıtılanlar</string>
+    <string name="title_unforward">Dağıtılamayanlar</string>
+    <string name="title_delivery">Dağıtılacaklar</string>
 
+    <style name="DefaultButtonText">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">#979797</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_margin">3dp</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:shadowColor">#f9f9f9</item>
+        <item name="android:shadowDx">1</item>
+        <item name="android:shadowDy">1</item>
+        <item name="android:shadowRadius">1</item>
+    </style>
+    <string name="default_spinner_item">Seçiniz</string>
+    <string-array name="spinner_item">
+        <item>Teslim Edildi</item>
+        <item>Teslim Edilmedi</item>
+    </string-array>
 </resources>

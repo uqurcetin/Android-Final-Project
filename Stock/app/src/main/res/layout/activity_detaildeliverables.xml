@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical" android:layout_width="wrap_content"
+        android:layout_height="fill_parent">
+    <LinearLayout
+        android:weightSum="1"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:gravity="bottom"
+            android:layout_weight="0.3"
+            android:text="Sipariş Durumu"
+            android:layout_width="0dip"
+            android:layout_height="match_parent" />
+        <Spinner
+            android:layout_weight="0.7"
+            android:layout_width="0dip"
+            android:entries="@array/spinner_item"
+            android:prompt="@string/default_spinner_item"
+            android:layout_height="match_parent"
+            android:id="@+id/spSiparisDurum" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_marginTop="60dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:weightSum="1"
+        android:layout_height="wrap_content">
+        <TextView
+            android:text="Sipariş ID"
+            android:layout_weight="0.3"
+            android:gravity="bottom"
+            android:layout_width="0dip"
+            android:layout_height="match_parent" />
+
+        <EditText
+            android:id="@+id/edtSiparisID"
+            android:layout_weight="0.7"
+            android:layout_width="0dip"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+    <LinearLayout
+            android:layout_marginTop="100dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:weightSum="1"
+            android:layout_height="wrap_content">
+            <TextView
+                android:text="Ürün Adı"
+                android:layout_weight="0.3"
+                android:gravity="bottom"
+                android:layout_width="0dip"
+                android:layout_height="match_parent" />
+
+            <EditText
+                android:id="@+id/edtUrunAdi"
+                android:layout_weight="0.7"
+                android:layout_width="0dip"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+    <LinearLayout
+            android:layout_marginTop="140dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:weightSum="1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:gravity="bottom"
+                android:layout_weight="0.3"
+                android:text="Müşteri Adı"
+                android:layout_width="0dip"
+                android:layout_height="match_parent" />
+
+            <EditText
+                android:layout_weight="0.7"
+                android:id="@+id/edtMusteriAdi"
+                android:layout_width="0dip"
+                android:layout_height="match_parent" />
+
+            </LinearLayout>
+    <LinearLayout
+            android:weightSum="1"
+            android:layout_marginTop="180dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_weight="0.3"
+                android:gravity="bottom"
+                android:text="Ödeme Türü"
+                android:layout_width="0dip"
+                android:layout_height="match_parent" />
+
+            <EditText
+                android:layout_weight="0.7"
+                android:id="@+id/edtOdemeTuru"
+                android:layout_width="0dip"
+                android:layout_height="match_parent" />
+
+        </LinearLayout>
+    <LinearLayout
+            android:weightSum="1"
+            android:layout_marginTop="220dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:gravity="bottom"
+                android:layout_weight="0.3"
+                android:text="Teslim Tarihi"
+                android:layout_width="0dip"
+                android:layout_height="match_parent" />
+            <EditText
+                android:layout_weight="0.7"
+                android:id="@+id/edtTeslimTarihi"
+                android:layout_width="0dip"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+    <LinearLayout
+            android:weightSum="1"
+            android:layout_marginTop="260dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_weight="0.3"
+                android:gravity="bottom"
+                android:text="Müşteri Adresi"
+                android:layout_width="0dip"
+                android:layout_height="match_parent" />
+
+            <EditText
+                android:layout_weight="0.7"
+                android:id="@+id/edtSiparisAdresi"
+                android:layout_width="0dip"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+    <LinearLayout
+            android:weightSum="1"
+            android:layout_marginTop="300dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:gravity="bottom"
+                android:layout_weight="0.3"
+                android:text="Teslim Eden"
+                android:layout_width="0dip"
+                android:layout_height="match_parent" />
+            <EditText
+                android:layout_weight="0.7"
+                android:id="@+id/edtTeslimEden"
+                android:layout_width="0dip"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+    <LinearLayout
+            android:weightSum="1"
+            android:layout_marginTop="340dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:gravity="bottom"
+                android:layout_weight="0.3"
+                android:text="Açıklama"
+                android:layout_width="0dip"
+                android:layout_height="match_parent" />
+            <EditText
+                android:layout_weight="0.7"
+                android:id="@+id/edtAciklama"
+                android:layout_width="0dip"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+</RelativeLayout>
+
+

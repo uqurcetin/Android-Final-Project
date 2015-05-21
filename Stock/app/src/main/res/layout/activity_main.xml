@@ -1,18 +1,163 @@
-<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<android.support.v4.widget.DrawerLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     android:id="@+id/drawer_layout"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:theme="@android:style/Theme.WithActionBar"
-    >
+    android:layout_height="match_parent">
 
     <!-- mian content frame -->
-    <FrameLayout
-        android:id="@+id/content_frame"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent" />
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:gravity="center"
+        android:background="@drawable/layout_background">
+
+        <TableLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            >
+
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="3"
+                >
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_column="0"
+                    android:layout_weight="1"
+                    android:drawableTop="@drawable/icon_clients"
+                    android:background="@android:color/transparent"
+                    style="@android:style/TextAppearance.Small"
+                    android:layout_margin="10dp"
+                    android:hapticFeedbackEnabled="true"
+                    android:id="@+id/buttonMenuProfil"
+                    android:text="@string/title_profil" />
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/buttonMenuDagitilacaklar"
+                    android:layout_column="1"
+                    android:layout_weight="1"
+                    android:drawableTop="@drawable/icon_habitations"
+                    android:background="@android:color/transparent"
+                    android:adjustViewBounds="true"
+                    style="@android:style/TextAppearance.Small"
+                    android:layout_margin="10dp"
+                    android:hapticFeedbackEnabled="true"
+                    android:text="@string/title_delivery" />
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/buttonMenuDagitilanlar"
+                    android:layout_column="2"
+                    android:layout_weight="1"
+                    android:drawableTop="@drawable/icon_interventions"
+                    android:background="@android:color/transparent"
+                    android:adjustViewBounds="true"
+                    style="@android:style/TextAppearance.Small"
+                    android:layout_margin="10dp"
+                    android:hapticFeedbackEnabled="true"
+                    android:text="@string/title_forward" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="3"
+                >
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/buttonMenuDagitilamayanlar"
+                    android:layout_column="0"
+                    android:layout_weight="1"
+                    android:drawableTop="@drawable/icon_analyses"
+                    android:background="@android:color/transparent"
+                    android:adjustViewBounds="true"
+                    style="@android:style/TextAppearance.Small"
+                    android:layout_margin="10dp"
+                    android:hapticFeedbackEnabled="true"
+                    android:text="@string/title_unforward" />
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/buttonMenuAyarlar"
+                    android:layout_weight="1"
+                    android:drawableTop="@drawable/icon_options"
+                    android:background="@android:color/transparent"
+                    android:adjustViewBounds="true"
+                    style="@android:style/TextAppearance.Small"
+                    android:layout_margin="10dp"
+                    android:hapticFeedbackEnabled="true"
+                    android:text="@string/title_settings" />
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/buttonMenuSync"
+                    android:layout_weight="1"
+                    android:drawableTop="@drawable/icon_sync"
+                    android:background="@android:color/transparent"
+                    android:adjustViewBounds="true"
+                    style="@android:style/TextAppearance.Small"
+                    android:layout_margin="10dp"
+                    android:hapticFeedbackEnabled="true"
+                    android:enabled="false"
+                    android:text="@string/title_sync" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="3"
+                >
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/buttonMenuKapat"
+                    android:layout_column="0"
+                    android:layout_weight="1"
+                    android:drawableTop="@drawable/icon_quit"
+                    android:background="@android:color/transparent"
+                    android:adjustViewBounds="true"
+                    style="@android:style/TextAppearance.Small"
+                    android:layout_margin="10dp"
+                    android:hapticFeedbackEnabled="true"
+                    android:text="@string/title_menu_close" />
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:adjustViewBounds="true"
+                    android:background="@android:color/transparent"
+                    style="@android:style/TextAppearance.Small"
+                    android:layout_margin="10dp"/>
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:adjustViewBounds="true"
+                    android:background="@android:color/transparent"
+                    style="@android:style/TextAppearance.Small"
+                    android:layout_margin="10dp"/>
+            </TableRow>
+        </TableLayout>
+
+    </LinearLayout>
 
 
     <!-- include sliding menu here -->
-    <include layout="@layout/sliding_menu" />
+
+
 
 </android.support.v4.widget.DrawerLayout>

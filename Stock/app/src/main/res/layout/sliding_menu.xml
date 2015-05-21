@@ -9,7 +9,6 @@
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_above="@+id/footer"
         android:fillViewport="true"
         android:scrollbars="none" >
 
@@ -119,7 +118,9 @@
                             android:singleLine="true"
                             android:text="Ana Sayfa"
                             android:textColor="@color/white"
-                            android:textSize="16sp" />
+                            android:textSize="16sp"
+                            android:id="@+id/txtHome"
+                            />
                     </RelativeLayout>
 
                     <View
@@ -130,7 +131,7 @@
                         android:background="#848484" />
 
                     <RelativeLayout
-                        android:id="@+id/rlUploads"
+                        android:id="@+id/rlFindAddress"
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
@@ -159,7 +160,7 @@
                             android:shadowDy="-1"
                             android:shadowRadius="0.5"
                             android:singleLine="true"
-                            android:text="Dosyalar"
+                            android:text="Adres Bul"
                             android:textColor="@color/white"
                             android:textSize="16sp" />
                     </RelativeLayout>
@@ -314,6 +315,7 @@
                         android:layout_height="32dp"
                         android:layout_centerVertical="true"
                         android:padding="8dp"
+                        android:src="@drawable/synchronize"
                          />
 
                     <TextView
@@ -413,7 +415,46 @@
                         android:textColor="@color/white"
                         android:textSize="16sp" />
                 </RelativeLayout>
+                <View
+                    android:layout_width="wrap_content"
+                    android:layout_height="1dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:background="#848484" />
+                <RelativeLayout
+                    android:id="@+id/rlProfil"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/list_selector"
+                    android:clickable="true"
+                    android:paddingBottom="6dp"
+                    android:paddingLeft="12dp"
+                    android:paddingRight="6dp"
+                    android:paddingTop="6dp" >
 
+                    <ImageView
+                        android:id="@+id/imgProfil"
+                        android:layout_width="32dp"
+                        android:layout_height="32dp"
+                        android:layout_centerVertical="true"
+                        android:padding="8dp"
+                        android:src="@drawable/profilicon" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="4dp"
+                        android:layout_toRightOf="@+id/imgProfil"
+                        android:ellipsize="end"
+                        android:shadowDx="0"
+                        android:shadowDy="-1"
+                        android:shadowRadius="0.5"
+                        android:singleLine="true"
+                        android:text="Profil"
+                        android:textColor="@color/white"
+                        android:textSize="16sp" />
+                </RelativeLayout>
 
 
 
@@ -467,43 +508,5 @@
             </LinearLayout>
         </RelativeLayout>
     </ScrollView>
-
-    <LinearLayout
-        android:id="@+id/footer"
-        android:layout_width="match_parent"
-        android:layout_height="42dp"
-        android:layout_alignParentBottom="true"
-        android:orientation="horizontal" >
-
-        <ImageView
-            android:id="@+id/ivMenuFacebook"
-            android:layout_width="wrap_content"
-            android:layout_height="40dp"
-            android:layout_gravity="center"
-            android:layout_weight="1"
-            android:background="@drawable/fb_selector"
-            android:padding="7dp"
-            android:src="@drawable/menu_fb_icon" />
-
-        <ImageView
-            android:id="@+id/ivMenuTwitter"
-            android:layout_width="wrap_content"
-            android:layout_height="40dp"
-            android:layout_gravity="center"
-            android:layout_weight="1"
-            android:background="@drawable/twt_selector"
-            android:padding="7dp"
-            android:src="@drawable/menu_twt_icon" />
-
-        <ImageView
-            android:id="@+id/ivMenuShare"
-            android:layout_width="wrap_content"
-            android:layout_height="40dp"
-            android:layout_gravity="center"
-            android:layout_weight="1"
-            android:background="@drawable/share_selector"
-            android:padding="7dp"
-            android:src="@drawable/menu_share_icon" />
-    </LinearLayout>
 
 </RelativeLayout>
