@@ -118,6 +118,7 @@ public class MainActivity extends ActionBarActivity {
 
             }
         });
+
         slMenuFindAddress.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

@@ -26,7 +26,6 @@ public class AndroidGPSTrackingActivity extends ActionBarActivity {
         this.getSupportActionBar().setHomeAsUpIndicator( R.drawable.back);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         getSupportActionBar().setBackgroundDrawable(new ColorDrawable(Color.parseColor("#3B0B0B")));
-
         overridePendingTransition(R.anim.activity_open_translate, R.anim.activity_close_scale);
     }
     protected void onPause() {

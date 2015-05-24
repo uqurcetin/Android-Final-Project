@@ -104,14 +104,12 @@ public class LocationActivity extends FragmentActivity {
     public void initializeMapLocationSettings() {
         googleMap.setMyLocationEnabled(true);
     }
-
     public void initializeMapTraffic() {
         googleMap.setTrafficEnabled(true);
     }
     public void initializeMapType() {
         googleMap.setMapType(GoogleMap.MAP_TYPE_NORMAL);
     }
-
     public void initializeMapViewSettings() {
         googleMap.setIndoorEnabled(true);
         googleMap.setBuildingsEnabled(false);

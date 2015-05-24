@@ -8,9 +8,4 @@
         android:icon="@drawable/add"
         android:title="Add"/>
 
-    <item  android:id="@+id/menu_search"
-        android:title="@string/app_name"
-        android:icon="@drawable/refresh"
-        app:showAsAction="always"
-        app:actionViewClass="android.support.v7.widget.SearchView" />
 </menu>

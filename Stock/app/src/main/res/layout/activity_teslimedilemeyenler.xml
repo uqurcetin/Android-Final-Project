@@ -1,6 +1,27 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical" android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
     android:layout_height="match_parent">
+    <!-- Editext for Search -->
+    <EditText
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/edtSearchCustomer"
+        android:background="@drawable/rounded_edittext"
+        android:alpha="0.8"
+        android:hint="Ara.."
+        android:autoText="false"
+        android:textColor="@color/black"
+        android:drawableLeft="@drawable/user"
+        />
+
+    <ListView
+        android:id="@+id/lvTeslimEdilemeyenler"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:divider="#b5b5b5"
+        android:dividerHeight="1dp"
+        android:listSelector="@drawable/list_selector2" />
 
 </LinearLayout>
